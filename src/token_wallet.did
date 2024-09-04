@@ -1,0 +1,9 @@
+type Result = variant { Ok; Err: text };
+service : {
+  "create_wallet": () -> (principal) query;
+  "transfer": (principal, nat) -> (Result);
+  "get_balance": (principal) -> (nat) query;
+  "mint": (principal, nat) -> (Result);
+  "burn": (nat) -> (Result);
+  "change_owner": (principal) -> (Result);
+}

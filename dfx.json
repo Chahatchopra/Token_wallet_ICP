@@ -1,0 +1,24 @@
+{
+  "canisters": {
+    "token_wallet": {
+      "type": "custom",
+      "candid": "src/your_canister_name.did",
+      "wasm": "target/wasm32-unknown-unknown/release/your_canister_name.wasm",
+      "build": "cargo build --target wasm32-unknown-unknown --release"
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000"
+    },
+    "ic": {
+      "providers": ["https://ic0.app"]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "version": 1
+}

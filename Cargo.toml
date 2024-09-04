@@ -1,0 +1,14 @@
+[package]
+name = "practice"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+candid = "0.10.10"
+ic-cdk = "0.15.0"
+ic-cdk-macros = "0.15.0"
+serde = "1.0.204"
+
+[lib]
+path = "src/lib.rs"
+#crate-type = ["cdylib", "rlib"]
